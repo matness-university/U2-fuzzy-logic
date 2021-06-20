@@ -1,16 +1,14 @@
-function DILAC = dilac(x,y)
-
+function CON = con(x,y)
     if(size(x) ~= size(y))
         error('Los vectores deben tener las mismas dimensiones');
     end
     
-    DILAC = y.^0.5;
-
+    CON = y.^2
 end
 
 % x = 0:0.01:1;
 % y = x;
+% y2 = con(x,y);
 % plot(x,y);
 % hold on;
-% y2 = dilac(x,y);
-% plot(x,y2);
+% chart = plot(x,y2);
