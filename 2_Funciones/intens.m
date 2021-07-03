@@ -8,7 +8,7 @@ function INTENS = intens(x,y)
     
     for i=1:length(x)
         if(y(i) < 0.5)
-            values(i) = 2*y(i);
+            values(i) = 2*y(i).^2;
         else
             values(i) = 1-2*(1-y(i)).^2;
         end
